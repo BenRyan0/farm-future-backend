@@ -160,22 +160,26 @@ app.use(cookieParser());
 // Routes
 app.use('/api', require('./routes/chatRoutes'));
 app.use('/api', require('./routes/dashboard/dashboardIndexRoutes'));
-
-app.use('/api/home', require('./routes/home/homeRoutes'));
-app.use('/api', require('./routes/deal/dealRoutes'));
-
-
 app.use('/api', require('./routes/authRoutes'));
-app.use('/api', require('./routes/dashboard/sellerRoutes'));
-app.use('/api', require('./routes/dashboard/adminRoutes'));
-app.use('/api', require('./routes/home/traderAuthRoutes'));
-app.use('/api', require('./routes/home/cardRoutes'));
 app.use('/api', require('./routes/dashboard/categoryRoutes'));
-app.use('/api', require('./routes/dashboard/additionalFeatures'));
-app.use('/api', require('./routes/dashboard/voucherRoutes'));
-app.use('/api', require('./routes/dashboard/listingRoute'));
 
-app.use('/api', require('./routes/transaction/transactionRoutes'));
+
+
+// app.use('/api/home', require('./routes/home/homeRoutes'));
+// app.use('/api', require('./routes/deal/dealRoutes'));
+
+
+
+// app.use('/api', require('./routes/dashboard/sellerRoutes'));
+// app.use('/api', require('./routes/dashboard/adminRoutes'));
+// app.use('/api', require('./routes/home/traderAuthRoutes'));
+// app.use('/api', require('./routes/home/cardRoutes'));
+// app.use('/api', require('./routes/dashboard/categoryRoutes'));
+// app.use('/api', require('./routes/dashboard/additionalFeatures'));
+// app.use('/api', require('./routes/dashboard/voucherRoutes'));
+// app.use('/api', require('./routes/dashboard/listingRoute'));
+
+// app.use('/api', require('./routes/transaction/transactionRoutes'));
 
 
 

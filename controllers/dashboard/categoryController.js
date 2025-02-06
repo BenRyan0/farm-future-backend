@@ -1,5 +1,5 @@
 const categoryModel = require("../../models/categoryModel");
-const additionalFeatureModel = require("../../models/additionalFeatureModel");
+// const additionalFeatureModel = require("../../models/additionalFeatureModel");
 const { responseReturn } = require("../../utils/response");
 const cloudinary = require("cloudinary").v2;
 exports.cloudinary = cloudinary;
@@ -41,6 +41,7 @@ class categoryController {
         console.log("Form parsed successfully");
         let { name } = fields;
         let { image } = files;
+        console.log(name)
         if (!name || !image) {
           return responseReturn(res, 400, {
             error: "Name or image not provided",
